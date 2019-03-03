@@ -22,6 +22,8 @@ def crawl_spotify_viral(url_1):
             trend = '(DOWN)'
         elif tmp_tag.find('svg')['fill'] == '#4687d7':
             trend = '(-)'
+        elif tmp_tag.find('svg')['fill'] == '#3e3e40':
+            trend = '(-)'
 
         data = {"rank" : rank,
                 "song" : song,
