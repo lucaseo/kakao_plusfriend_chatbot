@@ -1,4 +1,4 @@
-import requests, json, time
+import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -20,7 +20,7 @@ def crawl_spotify_viral(url_1):
             trend = '(UP)'
         elif tmp_tag.find('svg')['fill'] == '#bd3200':
             trend = '(DOWN)'
-        elif tmp_tag.find('svg')['fill'] == '#3e3e40':
+        elif tmp_tag.find('svg')['fill'] == '#4687d7':
             trend = '(-)'
 
         data = {"rank" : rank,

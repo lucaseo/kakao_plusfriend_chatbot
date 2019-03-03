@@ -5,7 +5,7 @@ from flask import request
 from flask import jsonify
 from flask import json
 
-import requests, json, time
+import requests, time
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -21,7 +21,7 @@ def hello_world():
 
 @app.route("/keyboard")
 def keyboard():
-    response = {
+    return jsonify({
         "type" : "buttons",
         "buttons" : ["Global",
                      "United States",
@@ -29,14 +29,12 @@ def keyboard():
                      "Hong Kong",
                      "Singapore",
                     ]
-    }
-    response = json.dumps(response, ensure_ascii=False)
-    return response
+    })
 
 
 @app.route("/message", methods=["POST"])
 def message():
-    data = json.loads(request.data)
+    data = request.get_json()
     content = data["content"]
 
     if content == "Global":
