@@ -26,8 +26,21 @@ def keyboard():
         "buttons" : ["Global",
                      "United States",
                      "United Kingdom",
+                     "Argentina",
+                     "Australia",
+                     "Canada",
+                     "Brazil",
+                     "Chile",
+                     "Colombia",
+                     "France",
+                     "Germany",
                      "Hong Kong",
+                     "Japan",
+                     "Malaysia",
+                     "Mexico",
                      "Singapore",
+                     "Spain",
+                     "Taiwan"
                     ]
     })
 
@@ -45,7 +58,7 @@ def message():
         result1 = crawl_spotify_viral(url_1)
 
     elif content == "United States":
-        text = "Spotify Viral " + "USA"
+        text = "Spotify Viral " + "US"
         url = "https://imgur.com/zs7t25X.png"
         url_1 = "https://spotifycharts.com/viral/us/daily/latest"
         label = "차트 전체순위 보러가기"
@@ -54,10 +67,66 @@ def message():
     elif content == "United Kingdom":
         text = "Spotify Viral " + "UK"
         url = "https://imgur.com/zs7t25X.png"
-        url_1 = "https://spotifycharts.com/viral/uk/daily/latest"
+        url_1 = "https://spotifycharts.com/viral/gb/daily/latest"
         label = "차트 전체순위 보러가기"
         result1 = crawl_spotify_viral(url_1)
 
+    elif content == "Argentina":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/ar/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Australia":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/at/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+
+    elif content == "Brazil":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/br/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Canada":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/ca/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Chile":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/cl/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Colombia":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/co/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "France":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/fr/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Germany":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/de/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
 
     elif content == "Hong Kong":
         text = "Spotify Viral " + str(content)
@@ -66,11 +135,45 @@ def message():
         label = "차트 전체순위 보러가기"
         result1 = crawl_spotify_viral(url_1)
 
+    elif content == "Japan":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/jp/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Malaysia":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/my/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Mexico":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/mx/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
 
     elif content == "Singapore":
         text = "Spotify Viral " + str(content)
         url = "https://imgur.com/zs7t25X.png"
         url_1 = "https://spotifycharts.com/viral/sg/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Spain":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/es/daily/latest"
+        label = "차트 전체순위 보러가기"
+        result1 = crawl_spotify_viral(url_1)
+
+    elif content == "Taiwan":
+        text = "Spotify Viral " + str(content)
+        url = "https://imgur.com/zs7t25X.png"
+        url_1 = "https://spotifycharts.com/viral/tw/daily/latest"
         label = "차트 전체순위 보러가기"
         result1 = crawl_spotify_viral(url_1)
 
@@ -107,11 +210,24 @@ def message():
 
       "keyboard": {
         "type": "buttons",
-        "buttons": ["Global",
+        "buttons" : ["Global",
                      "United States",
                      "United Kingdom",
+                     "Argentina",
+                     "Australia",
+                     "Canada",
+                     "Brazil",
+                     "Chile",
+                     "Colombia",
+                     "France",
+                     "Germany",
                      "Hong Kong",
+                     "Japan",
+                     "Malaysia",
+                     "Mexico",
                      "Singapore",
+                     "Spain",
+                     "Taiwan"
                     ]
       }
     }
