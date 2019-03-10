@@ -14,8 +14,8 @@
 
 
 ### 개발 요소
-- Python
-  - BeautifulSoup 
+- Data Crawling
+	- Python
+  	- BeautifulSoup 
 - AWS EC2 Instance (Ubuntu 16.04 LTS)
-  - crontab
 - Kakao 플러스친구 API
